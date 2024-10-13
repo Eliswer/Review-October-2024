@@ -1,0 +1,36 @@
+@import "./header";
+$background-color: #fff9f7;
+$black: #120701;
+
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*can use this anywhere where my styles.scss would be imported*/
+
+html {
+  background-color: $background-color;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin: 0 4%;
+}
+
+body {
+  @include FlexCenter();
+  color: $black;
+  flex-direction: column;
+  margin: auto;
+}
+
+ul {
+  background-color: #d4f773;
+  border-radius: 20px;
+
+  li {
+    padding: 5px 0;
+  }
+}
